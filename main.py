@@ -16,6 +16,9 @@ def maestra():
 def prueba():
     return render_template('prueba.html')
 
+@app.route('/crear_cuenta')
+def crearCuenta():
+    return render_template('nuevaCuenta.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

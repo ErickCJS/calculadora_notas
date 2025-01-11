@@ -8,6 +8,7 @@ app = Flask(__name__)
 @app.route('/inicio_sesion')
 def inicio_sesion():
     controladores.controlador_usuario.listar_usuarios()
+    print("fsf")
     return render_template('login.html')
 
 @app.route('/maestra')

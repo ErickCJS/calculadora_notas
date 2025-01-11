@@ -57,7 +57,6 @@ def crearCuenta():
        
         try:
             controladores.controlador_usuario.insertar_usuario(nombre_apellido, tipo_usuario, filepath, password, correo)
-            flash('Usuario registrado exitosamente.', 'success')
             return redirect(url_for('inicio_sesion'))
         except Exception as e:
             flash(f'Error al registrar el usuario: {e}', 'danger')

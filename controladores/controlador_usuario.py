@@ -24,14 +24,13 @@ def insertar_usuario(nombre_apellido, tipo_usuario, imagen, password, correo):
         datos = (nombre_apellido, tipo_usuario, imagen, password, correo)
         
         cursor.execute(query, datos)
-        conexion.commit()  # Confirmar los cambios
+        conexion.commit()  
 
         print("Usuario registrado exitosamente.")
     except MySQLError as e:
         print(f"Error al insertar usuario: {e}")
         raise
     finally:
-        # Cerrar cursor y conexión
         if conexion:
             cursor.close()
             conexion.close()

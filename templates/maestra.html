@@ -21,9 +21,15 @@
                 </div>
                 <div class="detalle_usuario">
                     <div class="box_dt_user d-block ">
-                        <p id="cargo" class="ocultar_mostrar">Project Manager</p>
-                        <h6 id="usuario"  class="ocultar_mostrar">Julón Erick</h6>
-    
+                        <p id="cargo" class="ocultar_mostrar">
+                            {% if usuario[2] == 0 %}
+                                Bienvenido Administrador:
+                            {% else %}
+                                Hola administrador:
+                            {% endif %}
+                        </p>
+                        <h6 id="usuario"  class="ocultar_mostrar"> {{ usuario[1] }} </h6>
+                        <input type="text" value=" {{ usuario[0] }} " hidden>
                     </div>
      
                 </div>
@@ -100,4 +106,5 @@
     </div>
 </body>
 <script src="/static/js/maestra.js"></script>
+
 </html>

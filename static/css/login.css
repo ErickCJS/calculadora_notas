@@ -38,3 +38,9 @@ input[type="checkbox"] {
 #ccuenta:hover{
     color: #f6a478;
 }
+
+input:focus {
+    outline: none !important;
+    box-shadow: 0 0 2px #b1acaa !important; /* Cambia #fe6d20 por el color que prefieras */
+    border-color: #b1acaa !important; /* Cambia #fe6d20 por el color que prefieras */
+}

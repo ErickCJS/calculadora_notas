@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@media (600px <= width <= 2000px){
+    .frm_login{
+        width: 500px;
+        padding: 30px; 
+    }
+    *.frm_login{
+        color:#000000;
+        font-family: "Noto Sans" !important;
+    }
+
+    
+}
+
+@media (max-width: 600px) {
+    .frm_login {
+        width: 100%;
+        padding: 15px;
+    }
+
+}
+
+.crear_cuenta{
+    text-align: end;
+}  
+
+input[type="checkbox"] {
+    accent-color: #fe6d20;
+}
+#ccuenta, #sesiont {
+    color: #fe6d20;
+}
+
+#ingresar:hover{
+    background-color: #a19c9c;
+}
+
+#ccuenta:hover{
+    color: #f6a478;
+}
